@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уютная кухня</title>
+    <meta
+      name="description"
+      content="Лендинг кафе «Уютная кухня» с галереей, FAQ и формой онлайн-бронирования."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <div class="page-shell" id="top">
+      <header class="site-header container">
+        <a class="brand" href="#top" aria-label="Уютная кухня — на главную">
+          <svg
+            class="brand__icon"
+            viewBox="0 0 40 40"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M11 9.5c0 4.1 1.9 7.4 4.3 7.4s4.3-3.3 4.3-7.4"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2.4"
+            />
+            <path
+              d="M20.8 9.5c0 4.1 1.9 7.4 4.3 7.4s4.3-3.3 4.3-7.4"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2.4"
+            />
+            <path
+              d="M8.5 23.5c.7 4.2 4.4 7.3 8.7 7.3h8.7c4.3 0 8-3.1 8.7-7.3H8.5Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="2.4"
+            />
+          </svg>
+          <span class="brand__text">
+            <span>Уютная</span>
+            <span class="brand__accent">кухня</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="#menu">Меню</a>
+          <a href="#booking">К бронированию</a>
+        </nav>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <section class="hero container" aria-labelledby="hero-title">
+          <div class="hero__media">
+            <img
+              src="assets/hero-interior.webp"
+              alt="Интерьер кафе с тёплой подсветкой и большим деревянным столом"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </div>
+
+          <div class="hero__content">
+            <h1 id="hero-title">Домашняя кухня в центре города</h1>
+            <p>
+              Бронируйте стол онлайн — мы подготовим всё к вашему приходу.
+            </p>
+            <a class="button button--primary" href="#booking">Забронировать стол</a>
+          </div>
+        </section>
+
+        <section class="quick-link container" aria-label="Быстрый переход к бронированию">
+          <a class="quick-link__prompt" href="#booking">Нравится атмосфера?</a>
+          <a class="quick-link__accent" href="#booking">перейти к форме бронирования</a>
+        </section>
+
+        <section class="gallery container" id="menu" aria-labelledby="gallery-title">
+          <h2 id="gallery-title" class="visually-hidden">Галерея кафе</h2>
+
+          <div class="slider" data-slider>
+            <button
+              class="slider__arrow slider__arrow--prev"
+              type="button"
+              aria-label="Предыдущий слайд"
+              data-slider-prev
+            >
+              ‹
+            </button>
+
+            <div
+              class="slider__viewport"
+              tabindex="0"
+              aria-label="Слайдер с изображениями кафе"
+              data-slider-viewport
+            >
+              <div class="slider__track" data-slider-track>
+                <article class="slide">
+                  <img src="assets/slide-01-bake.webp" alt="Запеканка с пастой и томатами" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-02-cup.webp" alt="Белый стакан с кофе навынос" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-03-sweets.webp" alt="Шоколад, сыр и орехи на белом фоне" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-04-facade.webp" alt="Фасад уютного кафе вечером" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-05-salad.webp" alt="Салат с зеленью, томатами и грецкими орехами" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-06-grill.webp" alt="Шампуры на гриле в зоне кухни" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-07-bread.webp" alt="Свежие булочки в тёмной корзине" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-08-cocktail.webp" alt="Яркие коктейли на барной стойке" loading="lazy" decoding="async">
+                </article>
+                <article class="slide">
+                  <img src="assets/slide-09-brunch.webp" alt="Бранч с тостами, фасолью и яйцом пашот" loading="lazy" decoding="async">
+                </article>
+              </div>
+            </div>
+
+            <button
+              class="slider__arrow slider__arrow--next"
+              type="button"
+              aria-label="Следующий слайд"
+              data-slider-next
+            >
+              ›
+            </button>
+          </div>
+
+          <div class="slider__dots" aria-label="Индикатор слайдов" data-slider-dots></div>
+        </section>
+
+        <section class="faq container" aria-labelledby="faq-title">
+          <h2 id="faq-title">Частые вопросы</h2>
+
+          <div class="accordion" data-accordion>
+            <article class="accordion__item is-open">
+              <h3 class="accordion__heading">
+                <button
+                  class="accordion__trigger"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="faq-panel-hours"
+                  id="faq-trigger-hours"
+                >
+                  <span>Часы работы</span>
+                  <span class="accordion__icon" aria-hidden="true">−</span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-hours"
+                role="region"
+                aria-labelledby="faq-trigger-hours"
+              >
+                <p>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</p>
+              </div>
+            </article>
+
+            <article class="accordion__item is-open">
+              <h3 class="accordion__heading">
+                <button
+                  class="accordion__trigger"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="faq-panel-route"
+                  id="faq-trigger-route"
+                >
+                  <span>Как добраться</span>
+                  <span class="accordion__icon" aria-hidden="true">−</span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-route"
+                role="region"
+                aria-labelledby="faq-trigger-route"
+              >
+                <p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
+              </div>
+            </article>
+
+            <article class="accordion__item is-open">
+              <h3 class="accordion__heading">
+                <button
+                  class="accordion__trigger"
+                  type="button"
+                  aria-expanded="true"
+                  aria-controls="faq-panel-kids"
+                  id="faq-trigger-kids"
+                >
+                  <span>Детям и особые пожелания</span>
+                  <span class="accordion__icon" aria-hidden="true">−</span>
+                </button>
+              </h3>
+              <div
+                class="accordion__panel"
+                id="faq-panel-kids"
+                role="region"
+                aria-labelledby="faq-trigger-kids"
+              >
+                <p>
+                  Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="booking container" id="booking" aria-labelledby="booking-title">
+          <div class="booking__card">
+            <h2 id="booking-title">Бронирование стола</h2>
+            <p class="booking__description">
+              Заполните поля — перезвоним для подтверждения.
+            </p>
+
+            <form class="booking-form" novalidate data-booking-form>
+              <div class="form-field">
+                <label for="first-name">Имя</label>
+                <input
+                  id="first-name"
+                  name="firstName"
+                  type="text"
+                  autocomplete="given-name"
+                  required
+                >
+                <p class="form-field__error" data-error-for="first-name" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="last-name">Фамилия</label>
+                <input
+                  id="last-name"
+                  name="lastName"
+                  type="text"
+                  autocomplete="family-name"
+                  required
+                >
+                <p class="form-field__error" data-error-for="last-name" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                >
+                <p class="form-field__error" data-error-for="email" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Телефон</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                >
+                <p class="form-field__error" data-error-for="phone" aria-live="polite"></p>
+              </div>
+
+              <p class="form-status" aria-live="polite" data-form-status></p>
+
+              <button class="button button--olive" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal" hidden data-modal-root>
+      <div class="modal__overlay" data-modal-close></div>
+      <div
+        class="modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="success-title"
+        aria-describedby="success-description"
+      >
+        <h2 id="success-title">Заявка отправлена</h2>
+        <p id="success-description">
+          Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.
+        </p>
+        <button class="button button--soft" type="button" data-modal-close-button>
+          Закрыть
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
