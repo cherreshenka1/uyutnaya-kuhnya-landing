@@ -106,7 +106,7 @@ input:focus-visible,
 
 .site-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 22px;
@@ -141,6 +141,7 @@ input:focus-visible,
   display: flex;
   align-items: center;
   gap: 26px;
+  padding-top: 12px;
 }
 
 .site-nav a {
@@ -246,11 +247,12 @@ input:focus-visible,
   background: #ddcdbd;
 }
 
+/* ИСПРАВЛЕНО: текст и ссылка идут друг под другом, как на 1 скрине */
 .quick-link {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
   font-size: 0.88rem;
 }
 
@@ -260,11 +262,13 @@ input:focus-visible,
 }
 
 .quick-link__prompt {
+  display: block;
   text-decoration: none;
   color: var(--text-soft);
 }
 
 .quick-link__accent {
+  display: block;
   color: var(--terracotta);
 }
 
@@ -286,7 +290,11 @@ input:focus-visible,
 }
 
 .slide {
-  flex: 0 0 calc((100% - (var(--slider-gap) * (var(--slides-per-view) - 1))) / var(--slides-per-view));
+  flex: 0 0
+    calc(
+      (100% - (var(--slider-gap) * (var(--slides-per-view) - 1))) /
+        var(--slides-per-view)
+    );
   overflow: hidden;
   border-radius: var(--radius-md);
   background: #ddd6ce;
@@ -554,7 +562,7 @@ input:focus-visible,
 
   .site-nav {
     gap: 14px;
-    padding-top: 3px;
+    padding-top: 8px;
   }
 
   .site-nav a {
@@ -587,6 +595,7 @@ input:focus-visible,
   }
 
   .quick-link {
+    gap: 3px;
     font-size: 0.8rem;
   }
 
