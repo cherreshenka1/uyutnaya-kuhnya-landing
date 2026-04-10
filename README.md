@@ -20,4 +20,4 @@ python -m http.server 8000
 
 ## Живая ссылка
 
-
+cherreshenka1.github.io/uyutnaya-kuhnya-landing
